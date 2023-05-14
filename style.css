@@ -1,57 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
 * {
-    padding: 0px;
     margin: 0px;
-}
-
-body {
+    padding: 0px;
     background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 }
 
-header h1 {
-    width: 940px;
-    margin: 20px;
+header img {
+    margin: 10px;
+    padding: 10px;
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.txt-original {
+    color: #0A3871;
+    padding: 10px;
+    width: 680px;
+    height: 40vh;
+    border-style: none;
+    border-radius: 32px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.info p {
+    font-size: 0.4rem;
+    position: absolute;
+    height: 12px;
+    color: #495057;
+    opacity: 0.8;
+    top: 70vh;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin: 50px;
+    position: absolute;
+    top: 70vh;
+}
+
+.btn-cript {
+    font-size: 0.6rem;
+    padding: 10px;
+    width: 250px;
+    height: 67px;
+    border-radius: 24px;
+    border-style: none;
+    background-color: #0A3871;
+    color: #E5E5E5;
+}
+
+.btn-cript:hover {
+    box-shadow: 2px 2px 5px #0a38717a;
+    cursor: pointer;
+}
+
+.btn-descript {
+    font-size: 0.6rem;
+    padding: 10px;
+    width: 250px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.btn-descript:hover {
+    box-shadow: 2px 2px 5px #0a38717a;
+    cursor: pointer;
+}
+
+.descript {
+    width: 18vw;
     position: relative;
-    width: 100vw;
-    height: 60vh;
-    align-items: center;
 }
 
-.caixa-texto {
-    width: 1200px;
-    height: 50vh;
-    display: block;
-    position: absolute;
-}
-
-.entrada textarea {
-    display: block;
-    width: 800px;
-    height: 400px;
-    position: absolute;
-    left: 150px;
-    background-color: #E5E5E5;
-    border-radius: 10px;
-}
-
-.saida textarea {
-    display: block;
-    width: 200px;
-    height: 400px;
-    position: absolute;
-    float: right;
-    left: 1000px;
+.txt-alterado {
+    width: 250px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.103);
+    border-radius: 32px;
+    border-style: none;
     background-image: url(imagens/desenho1.png);
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
-}
-
-.botoes {
+    background-size: contain;
+    background-position-y: center;
+    
     position: absolute;
-    top: 425px;
 }
 
+.txt-alterado::placeholder{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 0.4rem;
+    line-height: 100%;
+    top: 55vh;
+    left: 2vw;
+}
+
+.btn-copiar{
+    position: absolute;
+    margin: 50px 40px;
+    top: 54vh;
+    font-size: 0.6rem;
+    padding: 10px;
+    width: 200px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background-color: #fff;
+    color: #0A3871;
+}
+
+.btn-copiar:hover{
+    box-shadow: 2px 2px 5px #0a38717a;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    top: 95vh;
+    width: 100vw;
+}
+
+footer p, a {
+    font-size: 0.4rem;
+    line-height: 100%;
+    text-align: center;
+    background-color: #0a3871;
+    padding: 10px;
+    color: #E5E5E5;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.33rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

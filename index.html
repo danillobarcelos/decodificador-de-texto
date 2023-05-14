@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Decodificador de texto</title>
+    <title>Decriptador de texto</title>
 </head>
 <body>
     <header>
-        <h1><img src="imagens/alura-logo.png" alt="Alura"></h1>
+        <img src="imagens/alura-logo.png" alt="Logo da Alura">
     </header>
-
     <main>
-        <div class="caixa-texto">
-            <section class="entrada">
-                <label for="crip"></label>
-                <textarea name="criptografar" id="crip" cols="30" rows="10">Digite aqui um texto.</textarea>
-            </section>
-            <section class="saida">
-                <label for="descrip"></label>
-                <textarea name="descriptografar" id="descrip" cols="30" rows="10"></textarea>
-            </section>
-        </div>
-        <section class="botoes">
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
+        <section>
+            <textarea class="txt-original" cols="30" rows="10" placeholder="Digite aqui o seu texto"></textarea>
+
+            <div class="info">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="btn">
+                <button class="btn-cript">Criptografar</button>
+                <button class="btn-descript">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="descript">
+            <textarea class="txt-alterado" cols="30" rows="10" placeholder="Nenhuma mensagem encontrada"></textarea>
+            <button class="btn-copiar">Copiar</button>
         </section>
     </main>
 
     <footer>
-        <p>Feito por <a href="">Danillo</a> como parte do Alura Challenges Oracle ONE.</p>
-        <p>2023</p>
+        <p>Criado por <a href="https://www.linkedin.com/in/danillobarcelos/" target="_blank">Danillo</a> como parte do Challenges ONE - Alura</p>
     </footer>
-
 </body>
 </html>
